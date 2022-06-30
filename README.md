@@ -61,6 +61,7 @@ The project contains an Android based fitness application that is able to track 
      ![History - Monthly](https://drive.google.com/uc?export=view&id=1Oav4lDPmXlvZMvOWvUgorNKKGn_BOhHd)
    
 ## Running the app 
+  - To build the app, use the `gradle build` command or use "Import Project" in Android Studio.
   - To use the app, an account is needed. To sign up, use the sign up page.
   
     [//]: # (pardon the nbsp)
@@ -69,7 +70,6 @@ The project contains an Android based fitness application that is able to track 
     ![Log In](https://drive.google.com/uc?export=view&id=1hjl5JAWKQqEd3O1mZexPlRoPQcb3EZwQ)
     ![Sign Up](https://drive.google.com/uc?export=view&id=1Q3xjovUIbtcM1kF6VxHWhF2F1UMgnlWw)
 
-To build the app, use the `gradle build` command or use "Import Project" in Android Studio.
 
 ## Database
 This projects uses [Cloud Firestore](https://firebase.google.com/docs/firestore/) for the database.
