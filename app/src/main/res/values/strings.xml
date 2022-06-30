@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Easy Fit</string>
+    <string name="title_activity_home">HomeAct</string>
+    <string name="title_home">Home</string>
+    <string-array name="Goals_Array">
+        <item>Weight Loss</item>
+        <item>Slow Weight Loss</item>
+        <item>Maintain Body Weight</item>
+        <item>Slow Weight Gain</item>
+        <item>Weight Gain</item>
+    </string-array>
+    <string-array name="Gender_Array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

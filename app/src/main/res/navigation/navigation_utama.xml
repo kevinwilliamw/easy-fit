@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_utama"
+    app:startDestination="@id/getstarted">
+
+    <fragment
+        android:id="@+id/loginFr"
+        android:name="com.example.easyfit.LoginFr"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFr_to_homeAct"
+            app:destination="@id/homeAct" />
+        <action
+            android:id="@+id/action_loginFr_to_signUp"
+            app:destination="@id/signUp" />
+    </fragment>
+    <activity
+        android:id="@+id/homeAct"
+        android:name="com.example.easyfit.HomeAct"
+        android:label="HomeAct" />
+    <fragment
+        android:id="@+id/getstarted"
+        android:name="com.example.easyfit.getstarted"
+        android:label="fragment_getstarted"
+        tools:layout="@layout/fragment_getstarted" >
+        <action
+            android:id="@+id/action_getstarted_to_accountselect"
+            app:destination="@id/accountselect" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountselect"
+        android:name="com.example.easyfit.accountselect"
+        android:label="fragment_accountselect"
+        tools:layout="@layout/fragment_accountselect" >
+        <action
+            android:id="@+id/action_accountselect_to_loginFr"
+            app:destination="@id/loginFr" />
+        <action
+            android:id="@+id/action_accountselect_to_signUp"
+            app:destination="@id/signUp" />
+    </fragment>
+    <activity
+        android:id="@+id/signUp"
+        android:name="com.example.easyfit.SignUp"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+</navigation>

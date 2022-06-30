@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.plan.PlanFragment"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    android:background="@color/appBg">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:text="Get Plan"
+        android:drawableLeft="@drawable/plan"
+        android:drawableTint="@color/white"
+        android:id="@+id/btnGetMealPlan"
+        android:textSize="18sp"
+        android:maxHeight="100sp">
+    </Button>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp">
+
+        //breakfast
+        <TextView
+            android:id="@+id/textBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Breakfast"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/textBreakfastNumber"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        //lunch
+        <TextView
+            android:id="@+id/textLunch"
+            android:layout_below="@id/textBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Lunch"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/textLunchNumber"
+            android:layout_alignBottom="@+id/textLunch"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        //dinner
+        <TextView
+            android:id="@+id/textDinner"
+            android:layout_below="@id/textLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Dinner"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/textDinnerNumber"
+            android:layout_alignBottom="@+id/textDinner"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        //snack
+        <TextView
+            android:id="@+id/textSnack"
+            android:layout_below="@id/textDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Snack"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/textSnackNumber"
+            android:layout_alignBottom="@+id/textSnack"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        //workout
+        <TextView
+            android:id="@+id/textWorkout"
+            android:layout_below="@+id/textSnack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Calories to lose"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/textWorkoutNumber"
+            android:layout_alignBottom="@+id/textWorkout"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

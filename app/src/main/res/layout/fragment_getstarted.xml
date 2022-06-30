@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".getstarted"
+    android:background="@color/appBg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/easyfit_all_white"
+        android:scaleX="0.5"
+        android:scaleY="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGetStarted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Become Healthier With EasyFit"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:backgroundTint="@color/cyan"
+        android:paddingHorizontal="70dp"
+        android:paddingVertical="10dp"
+        android:text="Get Started" />
+
+</RelativeLayout>

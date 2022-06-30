@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountselect"
+    android:background="@color/appBg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/easyfit_all_white"
+        android:scaleY="0.5"
+        android:scaleX="0.5"/>
+
+
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/btnToSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="70dp"
+        android:backgroundTint="@color/green"
+        android:text="Log In"
+        android:id="@+id/btnToLogin" />
+
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="70dp"
+        android:text="Sign Up"
+        android:id="@+id/btnToSignUp"/>
+
+</RelativeLayout>

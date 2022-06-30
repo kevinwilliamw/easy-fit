@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.history.HistoryFragment"
+    android:background="@color/appBg"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/timeFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDaily"
+            android:text="Daily"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btnMonthly"
+            android:text="Monthly"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btnYearly"
+            android:text="Yearly"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/timeFilter">
+        <ListView
+            android:id="@+id/lvHistory"
+            android:paddingTop="20dp"
+            android:paddingBottom="45dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/appBg"/>
+    </LinearLayout>
+
+</RelativeLayout>

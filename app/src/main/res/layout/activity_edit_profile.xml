@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProfileActivity"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="70dp"
+    android:background="@color/appBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Hello, [Name]"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"/>
+        //AGE
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="Age"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/EditAge"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:hint="Age (years)"
+            android:ems="3"
+            android:inputType="number"
+            android:textColorHint="#888888"
+            android:textColor="@color/white"/>
+        //HEIGHT
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:text="Height:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
+        <EditText
+            android:id="@+id/EditHeight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:ems="6"
+            android:hint="Current height (cm)"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#888888"/>
+        //WEIGHT
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:text="Weight:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
+        <EditText
+            android:id="@+id/EditWeight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:ems="6"
+            android:hint="Current weight (kg)"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#888888"/>
+        //Gender
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:text="Gender:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
+        <Spinner
+            android:id="@+id/DropdownGender"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"/>
+        //DIET GOAL DROPDOWN
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:text="Diet Goal:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.292" />
+        <Spinner
+            android:id="@+id/DropdownDietGoal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            />
+        //CALCULATE BUTTON
+        <Button
+            android:id="@+id/CalculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2CD3BE"
+            android:text="Calculate" />
+        //ALL STATUS
+        <TextView
+            android:id="@+id/BMIDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="The BMI is "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="BMI"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Status"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/BMRDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="The BMR is "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/BMR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="BMR"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/RDIDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Your RDI is "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/RDI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="RDI"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+        //RECAL
+        <Button
+            android:id="@+id/ReCalculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#EAA268"
+            android:text="Recalculate"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

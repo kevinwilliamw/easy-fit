@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFr"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:background="@color/appBg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/easyFitLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/easyfit_all_white"
+        android:scaleY="0.5"
+        android:scaleX="0.5"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@+id/easyFitLogo"
+        android:id="@+id/username"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#888888"
+        android:textColor="@color/white"
+        android:text=""/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/username"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:text=""/>
+
+    <CheckBox
+        android:id="@+id/checkboxRememberPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="Remember password"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxRememberPass"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnLogin"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/textDontHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Don't have an account yet ?"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textDontHaveAccount"
+        android:layout_below="@id/btnLogin"
+        android:paddingVertical="16dp"
+        android:textColor="@color/cyan"
+        android:textStyle="bold"
+        android:id="@+id/textSignUp"
+        android:gravity="center"
+        android:text="Sign Up"/>
+
+
+
+</RelativeLayout>

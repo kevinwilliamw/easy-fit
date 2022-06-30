@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addFoodActivity"
+    android:background="@color/appBg">
+
+    //top 3 buttons
+    <LinearLayout
+        android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnFood"
+            android:text="Food"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="11dp"/>
+        <Button
+            android:id="@+id/btnRecent"
+            android:text="Recently Eaten"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="11dp"/>
+        <Button
+            android:id="@+id/btnAddNewFood"
+            android:text="Add New Food"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="11dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/food"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search food"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#888888" />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btnShowAll"
+                android:background="@color/appBg"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_search_24"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnShowAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/appBg"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_dehaze_24"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lvFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textAddNewFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="15dp"
+            android:text="Add New Food"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/textFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Food name :"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/editFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:inputType="text"
+            android:hint="Input food name here"
+            android:textColorHint="#888888"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textFoodCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Calorie : "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editFoodCalorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Input calorie here"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#888888" />
+
+            <TextView
+                android:id="@+id/textKCAL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="kcal"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textFoodPortion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Portion (optional): "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/editFoodPortion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:inputType="number"
+            android:hint="Input portion here (gram)"
+            android:textColorHint="#888888"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnAddFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Food"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/cyan"/>
+
+    </LinearLayout>
+</RelativeLayout>

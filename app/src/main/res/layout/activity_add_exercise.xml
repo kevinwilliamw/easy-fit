@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addExerciseActivity"
+    android:background="@color/appBg">
+
+    //top 3 buttons
+    <LinearLayout
+        android:id="@+id/exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnExercise"
+            android:text="Exercise"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="11dp"/>
+        <Button
+            android:id="@+id/btnRecent"
+            android:text="Recent Exercise"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="-7dp"
+            android:textSize="11dp"
+            android:textAllCaps="true"/>
+        <Button
+            android:id="@+id/btnAddNewExercise"
+            android:text="Add New Exercise"
+            android:background="@color/statusBar"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="-7dp"
+            android:textSize="11dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/exercise"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search exercise"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#888888" />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btnShowAll"
+                android:background="@color/appBg"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_search_24"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnShowAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@color/appBg"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_dehaze_24"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lvExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textAddNewExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="15dp"
+            android:text="Add New Exercise"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textExerciseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Exercise name :"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editExerciseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Input exercise name here"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#888888" />
+
+        <TextView
+            android:id="@+id/textExerciseCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Calories burned : "
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editExerciseCalorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Input calorie here"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#888888" />
+
+            <TextView
+                android:id="@+id/textKCAL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="kcal"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Duration : "
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editExerciseDurationHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Input hour"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#888888" />
+
+            <TextView
+                android:id="@+id/textHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="hr"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editExerciseDurationMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Input minute"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#888888" />
+
+            <TextView
+                android:id="@+id/textMIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="min"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnAddExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/cyan"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:drawableTint="@color/white"
+            android:text="Add Exercise" />
+
+    </LinearLayout>
+</RelativeLayout>

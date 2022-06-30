@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:padding="15dp"
+    android:background="@color/appBg">
+
+    <TextView
+        android:id="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_below="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Username : "
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_below="@+id/textUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="Input username here"
+        android:textColorHint="#888888"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_below="@+id/editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Name : "
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_below="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="Input name here"
+        android:textColorHint="#888888"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_below="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Password : "
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPassword"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword"
+        android:hint="Input password here"
+        android:textColorHint="#888888"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sign Up"/>
+
+</RelativeLayout>
