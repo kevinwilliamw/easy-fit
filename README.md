@@ -36,11 +36,40 @@ The project contains an Android based fitness application that is able to track 
      
 #### Calorie Deficit History
 - User can view calorie deficit history by day, month, or year.
+- Negative value indicates surplus calorie intake
 
     [//]: # (pardon the nbsp)
-    #### **Daily** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Monthly** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Yearly**
+    #### **Daily** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Monthly** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Yearly**
     
      ![History - Daily](https://drive.google.com/uc?export=view&id=1iX91pqrsXFnTdwynmZyFZZn_h6oLhLS3)
      ![History - Monthly](https://drive.google.com/uc?export=view&id=1gdk4T6Y2ZlFD_OfDv5DJennhz0dxYrWN)
      ![History - Yearly](https://drive.google.com/uc?export=view&id=1AjfakpCP-516dX6RzY_LR3AddGZcWf_2)
+     
+#### Calorie Plan
+  - User can view reccomended calorie intake for breakfast, lunch, dinner, snack, as well as calories to lose (deficit).
+  
+  ![Plan](https://drive.google.com/uc?export=view&id=1WbNoimhX6cH5oSieqttJBClAbhQrwYNF)
+  
+#### Profile 
+  - User can view lifetime calorie deficit, calories burned, and calories eaten.
+  - User can recalculate BMI & RDI by editing personal data
+  
+    [//]: # (pardon the nbsp)
+    #### **Profile** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **BMI & RDI Calculator** 
     
+     ![Profile](https://drive.google.com/uc?export=view&id=1D-pj6RzSnonFpIoANdiRCIAbzsesa80Z)
+     ![History - Monthly](https://drive.google.com/uc?export=view&id=1Oav4lDPmXlvZMvOWvUgorNKKGn_BOhHd)
+   
+## Running the app 
+  - To use the app, an account is needed. To sign up, use the sign up page.
+  
+    [//]: # (pardon the nbsp)
+    #### **Log In** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Sign Up** 
+    
+    ![Log In](https://drive.google.com/uc?export=view&id=1hjl5JAWKQqEd3O1mZexPlRoPQcb3EZwQ)
+    ![Sign Up](https://drive.google.com/uc?export=view&id=1Q3xjovUIbtcM1kF6VxHWhF2F1UMgnlWw)
+
+To build the app, use the `gradle build` command or use "Import Project" in Android Studio.
+
+## Database
+This projects uses [Cloud Firestore](https://firebase.google.com/docs/firestore/) for the database.
